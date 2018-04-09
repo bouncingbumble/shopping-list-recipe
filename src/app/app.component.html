@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (nav)="detirmineNav($event)"></app-header>
 <div class="container">
   <div class="row">
-    <app-recipes></app-recipes>
+    <app-recipes *ngIf="recipesNav"></app-recipes>
   </div>
   <div class="row">
-    <app-shopping-list></app-shopping-list>
+    <app-shopping-list *ngIf="shoppingNav"></app-shopping-list>
   </div>
 </div>
