@@ -27,6 +27,10 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    Ingredients
+    <h2>Ingredients</h2>
+    <div class="list-group-item clearfix" *ngFor="let ingredient of recipe.ingredients">
+      <h4 class="list-group-item-heading">{{ingredient.name}}</h4>
+      <p class="list-group-item-text">Amount ({{ingredient.amount}})</p>
+    </div>
   </div>
 </div>

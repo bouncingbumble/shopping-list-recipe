@@ -12,6 +12,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { RecipesComponent } from './recipes/recipes.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { IngredientService } from './ingredient.service';
+import { RecipeService } from './recipe.service';
 
 
 @NgModule({
