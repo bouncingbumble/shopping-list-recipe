@@ -12,12 +12,17 @@ export class IngredientService {
   ];
   constructor() { }
 
-  addIngredient(type, amount){
-    this.ingredients.push(new Ingredient(type, amount));
-    this.ingredientsChanged.emit(this.ingredients.slice())
+  addIngredient(ingredient: Ingredient){
+    this.ingredients.push(ingredient);
+    this.ingredientsChanged.emit(this.ingredients.slice());
   }
 
   getIngredients(){
     return this.ingredients.slice();
+  }
+
+  addIngredients(ingredients: Ingredient[]){
+    this.ingredients.push(...ingredients);
+    this.ingredientsChanged.emit(this.ingredients.slice());
   }
 }

@@ -30,7 +30,7 @@ import { RecipeService } from './recipe.service';
   imports: [
     BrowserModule
   ],
-  providers: [IngredientService],
+  providers: [IngredientService, RecipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
