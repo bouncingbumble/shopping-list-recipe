@@ -13,6 +13,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { IngredientService } from './ingredient.service';
 import { RecipeService } from './recipe.service';
+import { AppRoutingModule } from './app-routing/app-routing.module';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { RecipeService } from './recipe.service';
     DropdownDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [IngredientService, RecipeService],
   bootstrap: [AppComponent]
